@@ -1,5 +1,6 @@
 # Add  code here!
 def prime?(num)
-  (2..(num-1)).each{|n| return false if num % n == 0 }
-  true 
-end 
+return false if num < 2
+ (2..(num-1)).all?{|n| num % n != 0 }
+  true
+end
